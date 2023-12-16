@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escada com JavaScript</title>
+  <style>
+    #escada {
+      font-family: monospace;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+
+<div id="escada"></div>
+
+<script>
+  let numero;
+
+  // Pede ao usuário um número entre 1 e 8
+  do {
+    numero = prompt("Digite um número entre 1 e 8:");
+  } while (numero < 1 || numero > 8);
+
+  // Cria a escada com base no número inserido
+  let escada = '';
+  for (let i = 1; i <= numero; i++) {
+    for (let j = 1; j <= i; j++) {
+      escada += '#';
+    }
+    escada += '\n'; // Adiciona uma quebra de linha após cada linha
+  }
+
+  // Exibe a escada na div com o id 'escada'
+  document.getElementById('escada').innerText = escada;
+</script>
+
+</body>
+</html>
