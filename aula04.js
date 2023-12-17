@@ -1,14 +1,16 @@
-quantidade = 6
-function numerosimpares(valor){
-  let conta = 0;
-  let novavalor = valor;
-  while(conta < quantidade){
-    if(novavalor % 2 !== 0){
-      console.log(novavalor);
-      conta++;
+const quantidade = 6;
+
+function valoresimpares(valor){
+  let contador = 0;
+  let novovalor = valor;
+
+  while(contador < quantidade){
+    if(novovalor % 2 !== 0){
+      console.log(novovalor);
+      contador++;
     }
-  
-    novavalor++
+    novovalor++;
   }
 }
-numerosimpares(8)
+
+valoresimpares(8);
