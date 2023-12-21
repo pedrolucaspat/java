@@ -17,4 +17,6 @@ function numeros(numero1, numero2){
   }
   return soma;
 }
-console.log(numeros(200, 100))
+console.log(numeros(100, 201))
+
+prompt("digite um numero")
